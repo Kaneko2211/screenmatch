@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b7af4a7-f3bf-4c7b-a0da-db9c65650063" name="Changes" comment="Encapsulando el proyecto">
-      <change afterPath="$PROJECT_DIR$/src/com/aluracursos/screematch/modelos/Serie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aluracursos/screematch/modelos/Titulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screematch/modelos/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screematch/modelos/Pelicula.java" afterDir="false" />
-    </list>
+    <list default="true" id="6b7af4a7-f3bf-4c7b-a0da-db9c65650063" name="Changes" comment="Aplicando herencia" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727040574553</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Aplicando herencia">
+      <created>1727061078412</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727061078412</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +112,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Encapsulando el proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Encapsulando el proyecto" />
+    <MESSAGE value="Aplicando herencia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aplicando herencia" />
   </component>
 </project>
