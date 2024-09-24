@@ -48,10 +48,10 @@ public class Titulo {
         return totalDeLasEvaluaciones;
     }
 
-    void muestraFichaTecnica(){
+    public void muestraFichaTecnica(){
         System.out.println("El nombre de la pelicula es: "+nombre);
         System.out.println("Su fecha de lanzamiento es: "+fechaDeLanzamiento);
-        System.out.println("Dureción en minutos: "+duracionEnMinutos);
+        System.out.println("Duración en minutos: "+getDuracionEnMinutos());
     }
 
     void evaluar(double nota){

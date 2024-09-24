@@ -1,0 +1,14 @@
+package com.aluracursos.screematch.calculos;
+
+public class FiltroRecomendacion {
+
+    void filtra(Clasificacion clasificacion){
+        if(clasificacion.getClasificacion() >=4){
+            System.out.println("Muy bien evaluado en el momento");
+        } else if (clasificacion.getClasificacion() >=2) {
+            System.out.println("popularen el momento");
+        }else{
+            System.out.println("Colocálo en tu lista para verlo después");
+        }
+    }
+}
