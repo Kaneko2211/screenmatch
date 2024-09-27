@@ -1,4 +1,7 @@
 import com.aluracursos.screematch.calculos.CalculadoraDeTiempo;
+import com.aluracursos.screematch.calculos.Clasificacion;
+import com.aluracursos.screematch.calculos.FiltroRecomendacion;
+import com.aluracursos.screematch.modelos.Episodio;
 import com.aluracursos.screematch.modelos.Pelicula;
 import com.aluracursos.screematch.modelos.Serie;
 
@@ -8,10 +11,15 @@ public class Principal {
         miPelicula.setNombre("Encanto");
         miPelicula.setFechaDeLanzamiento(2021);
         miPelicula.setDuracionEnMinutos(120);
+        miPelicula.setIncluidoEnELPlan(true);
 
-        System.out.println("Mi pelicula es: "+miPelicula.getNombre());
-        System.out.println("Su fecha de lanzamiento es: "+miPelicula.getFechaDeLanzamiento());
-        System.out.println();
+        miPelicula.muestraFichaTecnica();
+        miPelicula.evaluar(10);
+        miPelicula.evaluar(10);
+        miPelicula.evaluar(7.8);
+        System.out.println(miPelicula.getTotalDeLasEvaluaciones());
+        System.out.println(miPelicula.calculaMedia());
+        System.out.println("Média de evaluaciones de la película: " +miPelicula.calculaMedia());
 
         Serie casaDragon = new Serie();
         casaDragon.setNombre("La casa del dragón");
@@ -22,9 +30,26 @@ public class Principal {
         casaDragon.muestraFichaTecnica();
         System.out.println(casaDragon.getDuracionEnMinutos());
 
+        Pelicula otraPelicula = new Pelicula();
+        otraPelicula.setNombre("Matrix");
+        otraPelicula.setFechaDeLanzamiento(1998);
+        otraPelicula.setDuracionEnMinutos(180);
+
         CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
         calculadora.incluye(miPelicula);
         calculadora.incluye(casaDragon);
+        calculadora.incluye(otraPelicula);
         System.out.println(calculadora.getTiempoTotal());
+
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtra(miPelicula);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("La casa Targaryen");
+        episodio.setSerie(casaDragon);
+        episodio.setTotalVisualizaciones(50);
+
+        filtroRecomendacion.filtra(episodio);
     }
 }
